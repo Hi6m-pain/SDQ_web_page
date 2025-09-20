@@ -240,7 +240,7 @@
         
         .app-details {
             flex: 1;
-            min-width: 350px;
+            max-width: 350px;
         }
         
         .app-title {
@@ -568,7 +568,7 @@
             }
             
             .app-title {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
             
             .screenshot {
@@ -582,9 +582,21 @@
             .features {
                 grid-template-columns: 1fr;
             }
+
+            .app-details {
+                min-width: 100%;
+                max-width: none;
+            }
+
+            .app-description {
+                font-size: 0.9rem;
+            }
         }
         
         @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
             .screenshot {
                 height: 300px;
             }
