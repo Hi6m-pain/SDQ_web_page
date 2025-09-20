@@ -166,7 +166,7 @@
 
             screenshot.addEventListener('mouseleave', () => {
                 screenshots.forEach(other => {
-                    other.style.transform = 'scale()';
+                    other.style.transform = 'scale(1)';
                     other.style.opacity = '1';
                 });
             });
@@ -423,3 +423,4 @@
                     break;
             }
         });
+
